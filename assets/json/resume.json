@@ -1,24 +1,22 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Juan Luis Rivera Ibarra",
+    "label": "Engineer and mathematician",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "juanluisrivera2@gmail.com",
+    "Telefono": "(+52) 55-16-34-35-69",
+    "url": "https://juanluisrivera.github.io",
+    "summary": "Mechatronic engineer and mathematician in progress, looking forward to increasing my knowledge and abilities in different areas of expertise",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "City": "Iztapalapa",
+      "State": "Ciudad de México",
+      "Country": "México"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "Linkedin",
+        "username": "Juan Luis Rivera",
+        "url": "https://www.linkedin.com/in/juan-luis-rivera-88a237262/"
       }
     ]
   },
@@ -151,7 +149,7 @@
   ],
   "languages": [
     {
-      "language": "German",
+      "language": "Spanish",
       "fluency": "Native speaker",
       "icon": ""
     },
