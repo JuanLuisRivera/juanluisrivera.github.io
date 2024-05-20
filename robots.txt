@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://juanluisrivera.github.io/sitemap.xml
+Sitemap: https://juanluisrivera.github.io/blog//sitemap.xml
