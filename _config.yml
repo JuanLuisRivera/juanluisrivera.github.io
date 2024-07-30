@@ -3,13 +3,22 @@ email: juanluisrivera2@gmail.com
 description: >-
   Pagina personal.
 baseurl: ""
-url: ""
+url: "https://juanluisrivera.github.io/"
 github_username:  JuanLuisRivera
 
+collections:
+  proyectos:
+    output: true
+  ejercicios:
+    output: true
+
 # Build settings
-theme: minima
+#theme: minima
+
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
