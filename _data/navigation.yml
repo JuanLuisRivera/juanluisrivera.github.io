@@ -1,8 +1,8 @@
-- name: Home
+- name: Inicio
   link: /
-- name: About
-  link: /about.html
+- name: Juan Luis Rivera Ibarra
+  link: /personal.html
 - name: Blog
   link: /blog.html
-- name: Staff
-  link: /staff.html
+- name: Proyectos
+  link: /proyectos.html
