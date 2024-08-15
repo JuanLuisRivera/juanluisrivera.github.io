@@ -1,12 +1,22 @@
-title: Juan Luis Rivera Ibarra
-email: juanluisrivera2@gmail.com
+# Necesary information for the SEO Tag jekyll plugin
+title: Juan Luis Rivera Personal Github Page
+tagline: A blog dedicated to share personal projects
 description: >-
-  Pagina personal.
-baseurl: ""
+  Personal webpage with material, guides, exercises, projects, and diverse elements I might be working on or have completed some time ago.
 url: "https://juanluisrivera.github.io/"
-github_username:  JuanLuisRivera
+author: Juan Luis Rivera Ibarra
+social: 
+  name: Juan Luis Rivera Ibarra
+  links:
+    - https://www.linkedin.com/in/juan-luis-rivera-ibarra/
+    - https://github.com/JuanLuisRivera
+
 
 collections:
+  sitios:
+    output: true
+  solEjercicios:
+    output: true
   proyectos:
     output: true
   ejercicios:
@@ -17,3 +27,26 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: "sitios"
+    values:
+      layout: "sitio"
+  - scope:
+      path: ""
+      type: "ejercicios"
+    values:
+      layout: "ejercicio"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "templates/default"
+
+excerpt_separator: <!--excerpt title-->

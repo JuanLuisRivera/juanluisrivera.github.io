@@ -1,3 +1,4 @@
 ---
-title: Juan Luis Rivera Ibarra
+layout: personal
+collection_name: articulos
 ---

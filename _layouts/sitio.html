@@ -1,0 +1,22 @@
+---
+layout: templates/default
+---
+<h1>
+  {{ page.title }}
+  {% assign sitio = site.sitios | where: 'nombre', page.sitio | first %}
+  {% if ejercicio %}
+    <a href="{{ sitio.url }}">{{ sitio.title }}</a>
+  {% endif %}
+</h1>
+
+{{ content }}
+
+<ul>
+  {% for post in site.posts %}
+    {% if post.sitio == ejercicio.sitio%}
+      <li>
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
