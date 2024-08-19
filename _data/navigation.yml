@@ -1,3 +1,4 @@
+#Creamos una lista de elementos para desplegar como menu de navegacion
 - name: Inicio
   link: /
 - name: Juan Luis Rivera Ibarra

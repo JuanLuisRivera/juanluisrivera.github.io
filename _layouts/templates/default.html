@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <script defer src="/assets/js/fontawesome/brands.js"></script>
+    <script defer src="/assets/js/fontawesome/solid.js"></script>
+    <script defer src="/assets/js/fontawesome/fontawesome.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -11,19 +14,15 @@
   </head>
 
   <body>
-    <nav>
-      {% include navigation.html %}
-    </nav>
-
     <header>
-
+      {% include navigation.html %}
     </header>
 
-
-    {{ content }}
+    <section class="content">
+      {{ content }}
+    </section>
     
     <footer>
-      <p>Juan Luis Rivera Ibarra</p>
       {% include social.html %}
     </footer>
   </body>
