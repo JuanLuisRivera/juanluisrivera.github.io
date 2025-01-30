@@ -2,7 +2,7 @@
 layout: templates/default
 ---
 <body>
-  <header> <h1> Ejercicio: {{ page.title }} </h1> </header>
+  <header> <h1> {{ page.title }} </h1> </header>
 
   <h2>
     Sitio: 
@@ -16,9 +16,9 @@ layout: templates/default
   
   <h2>
     <ul>
-      Posts relacionados: 
-      {% for post in site.posts %} <!-- Se  -->
-        {% if page.title == post.ejercicio %}
+      Ejercicios relacionados: 
+      {% for post in site.posts %}
+        {% if page.title == post.sitio %}
           <li>
             <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
           </li>

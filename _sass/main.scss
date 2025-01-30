@@ -1,3 +1,17 @@
 .current {
   color: green;
 }
+
+.pagination {
+  text-align: center;
+
+  .page-numbers {
+    margin-bottom: 10px;
+  }
+
+  .navigation-links {
+    margin-top: 5px;
+  }
+}
+
+

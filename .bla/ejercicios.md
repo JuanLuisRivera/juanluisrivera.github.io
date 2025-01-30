@@ -1,5 +1,7 @@
 ---
 title: Ejercicios
+pagination: 
+  enabled: true
 ---
 <h1>Ejercicios: </h1>
 

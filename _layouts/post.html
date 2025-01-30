@@ -3,12 +3,20 @@ layout: templates/default
 ---
 <h1>{{ page.title }}</h1>
 
-<p>
+<h2>
+  Sitio: 
+  {% assign sitio = site.sitios | where: 'name', page.sitio | first %}
+  {% if sitio %}
+    <a href="{{ sitio.url }}">{{ sitio.title }}</a>
+  {% endif %}
+</h2>
+
+<h3>
   {{ page.date | date_to_string }}
   {% assign ejercicio = site.ejercicios | where: 'title', page.ejercicio | first %}
   {% if ejercicio %}
     - <a href="{{ ejercicio.url }}">{{ ejercicio.title }}</a>
   {% endif %}
-</p>
+</h3>
 
 {{ content }}

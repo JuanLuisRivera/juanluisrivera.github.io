@@ -1,11 +1,15 @@
 #Creamos una lista de elementos para desplegar como menu de navegacion
 - name: Inicio
   link: /
-- name: Juan Luis Rivera Ibarra
-  link: /personal.html
+  
+- name: Acerca de mi
+  link: /paginas/about/
+
 - name: Blog
-  link: /blog.html
+  link: /paginas/blog/
+
 - name: Proyectos
-  link: /proyectos.html
+  link: /paginas/proyectos/
+
 - name: Ejercicios
-  link: /ejercicios.html
+  link: /paginas/ejercicios/

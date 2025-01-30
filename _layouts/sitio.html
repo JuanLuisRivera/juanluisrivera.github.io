@@ -11,11 +11,23 @@ layout: templates/default
 
 {{ content }}
 
+<h2>Publicaciones relacionadas:</h2>
+<h3>Ejercicios:</h3>
+<ul>
+  {% for post in site.ejercicios %}
+    {% if page.name == post.sitio %}
+      <li>
+        <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+<h3>Posts:</h3>
 <ul>
   {% for post in site.posts %}
-    {% if post.sitio == ejercicio.sitio%}
+    {% if page.name == post.sitio %}
       <li>
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
       </li>
     {% endif %}
   {% endfor %}

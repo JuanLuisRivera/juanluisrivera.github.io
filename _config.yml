@@ -2,12 +2,16 @@
 title: Juan Luis Rivera Personal Github Page
 tagline: A blog dedicated to share personal projects
 description: >-
-  Personal webpage with material, guides, exercises, projects, and diverse elements I might be working on or have completed some time ago.
+  Personal webpage with material, guides, exercises, projects, and diverse things I might be working on or have completed some time ago.
 url: "https://juanluisrivera.github.io/"
 author: Juan Luis Rivera Ibarra
 
-
+collections_dir: collections
 collections:
+  posts:
+    output: true
+  ejercicios:
+    output: true
   sitios:
     output: true
   solEjercicios:
@@ -17,11 +21,41 @@ collections:
   ejercicios:
     output: true
 
+permalink: pretty
+
+pagination:
+
+  enabled: true
+  debug: false
+
+  collections:
+    proyectos:
+      per_page: 2
+      permalink: /paginas/proyectos/:path/
+      sort_field: 'date'
+      sort_reverse: true
+    ejercicios:
+      per_page: 2
+      permalink: /paginas/ejercicios/:path/
+      sort_field: 'date'
+      sort_reverse: true
+    posts:
+      per_page: 2
+      permalink: /paginas/blog/:path/
+      sort_field: 'date'
+      sort_reverse: true
+  trail: 
+    before: 2
+    after: 2
+
+
+
 
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-paginate-v2
 
 defaults:
   - scope:

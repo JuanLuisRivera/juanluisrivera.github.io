@@ -1,14 +1,21 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-title: Home
+layout: templates/default
+title: Proyectos
+permalink: /paginas/proyectos
 pagination: 
   enabled: true
+  collection: proyectos
+  permalink: "/page/:num/"
   per_page: 2
 ---
-
 <h1> Todos los proyectos. </h1>
+
+{% for post in paginator.posts %}
+  <div class="post">
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <p>{{ post.excerpt }}</p>
+  </div>
+{% endfor %}
 
 <div class="pagination">
     <div class="page-numbers">
@@ -29,5 +36,3 @@ pagination:
     {% endif %}
   </div>
 </div>
-
-
