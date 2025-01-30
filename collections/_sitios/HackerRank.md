@@ -1,5 +1,5 @@
 ---
-title: Hacker Rank
+title: HackerRank
 name: HackerRank
 ---
-Hacker Rank es una pagina para practicar programacion.
+HackerRank es una pagina para practicar programacion.

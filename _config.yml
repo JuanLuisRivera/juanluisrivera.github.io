@@ -78,4 +78,4 @@ defaults:
     values:
       layout: "templates/default"
 
-excerpt_separator: <!--excerpt title-->
+excerpt_separator: <!--end_excerpt-->
