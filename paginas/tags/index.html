@@ -1,13 +1,12 @@
 ---
 layout: templates/default
-title: A Tag
+title: Posts por tema
 pagination: 
   enabled: true
-  collections: proyectos
   permalink: /:num/
   per_page: 2
 ---
-
+<h1>Posts ordenados por tema.</h1>
 {% for tag in site.tags %}
   <h3>{{ tag[0] }}</h3>
   <ul>
