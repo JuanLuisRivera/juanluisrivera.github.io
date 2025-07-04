@@ -14,5 +14,5 @@
 - name: Ejercicios
   link: /paginas/ejercicios/
 
-- name: Temas
-  link: /paginas/tags/
+#- name: Temas
+#  link: /paginas/tags/

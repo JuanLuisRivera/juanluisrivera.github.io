@@ -5,12 +5,12 @@
 - name: Linkedin
   link: https://www.linkedin.com/in/juan-luis-rivera-ibarra/
   icon: fa-brands fa-linkedin
-- name: Twitter
-  link: /
-  icon: fa-brands fa-square-x-twitter
-- name: Facebook
-  link: /proyectos.html
-  icon: fa-brands fa-square-facebook
-- name: Youtube
-  link: /ejercicios.html
-  icon: fa-brands fa-square-youtube
+#- name: Twitter
+#  link: /
+#  icon: fa-brands fa-square-x-twitter
+#- name: Facebook
+#  link: /proyectos.html
+#  icon: fa-brands fa-square-facebook
+#- name: Youtube
+#  link: /ejercicios.html
+#  icon: fa-brands fa-square-youtube

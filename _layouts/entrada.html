@@ -1,0 +1,49 @@
+---
+layout: templates/default
+---
+<h1>{{ page.title }}</h1>
+
+<h2>
+  Sitio: 
+  {% assign sitio = site.sitios | where: 'name', page.sitio | first %}
+  {% if sitio %}
+    <a href="{{ sitio.url }}">{{ sitio.title }}</a>
+  {% else %}
+    {{ page.sitio }}
+  {% endif %}
+</h2>
+
+<h2>
+  Lenguaje:
+  {% assign lenguaje = site.lenguajes | where: 'name', page.lenguaje | first %}
+  {% if lenguaje %}
+    <a href="{{ lenguaje.url }}">{{ lenguaje.title }}</a>
+  {% else %}
+    {{ page.lenguaje }}
+  {% endif %}
+</h2>
+
+<h2>
+  Elemento Tecnico:
+  {% assign elementoTecnico = site.elementosTecnicos | where: 'name', page.elementoTecnico | first %}
+  {% if elementoTecnico %}
+    <a href="{{ elementoTecnico.url }}">{{ elementoTecnico.title }}</a>
+  {% else %}
+    {{ page.elementoTecnico }}
+  {% endif %}
+</h2>
+
+<h2>
+  URL:
+  {% if page.URL %}
+    <a href="{{ page.URL }}"> Sitio Web</a>
+  {% else %}
+    Sin URL
+  {% endif %}
+</h2>
+
+<h3>
+  {{ page.date | date_to_string }}
+</h3>
+
+{{ content }}

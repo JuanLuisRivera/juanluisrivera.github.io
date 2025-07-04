@@ -3,20 +3,19 @@ layout: templates/default
 ---
 <h1>
   {{ page.title }}
-  {% assign sitio = site.sitios | where: 'nombre', page.sitio | first %}
-  {% if ejercicio %}
-    <a href="{{ sitio.url }}">{{ sitio.title }}</a>
+  {% assign sitio = site.lenguajes | where: 'nombre', page.lenguaje | first %}
+  {% if lenguaje %}
+    <a href="{{ lenguaje.url }}">{{ lenguaje.title }}</a>
   {% endif %}
 </h1>
 
 {{ content }}
 
-
 <h2>Publicaciones relacionadas:</h2>
 <h3>Ejercicios:</h3>
 <ul id="ejercicios-list">
   {% for ejercicio in site.ejercicios %}
-    {% if page.name == ejercicio.sitio %}
+    {% if page.name == ejercicio.lenguaje %}
       <li class="ejercicio-item">
         <h4><a href="{{ ejercicio.url }}">{{ ejercicio.title }}</a></h4>
       </li>
@@ -29,7 +28,7 @@ layout: templates/default
 <h3>Posts:</h3>
 <ul id="posts-list">
   {% for post in site.posts %}
-    {% if page.name == post.sitio %}
+    {% if page.name == post.lenguaje %}
       <li class="post-item">
         <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
       </li>
@@ -42,7 +41,7 @@ layout: templates/default
 <h3>Proyectos:</h3>
 <ul id="proyectos-list">
   {% for proyecto in site.proyectos %}
-    {% if page.name == proyecto.sitio %}
+    {% if page.name == proyecto.lenguaje %}
       <li class="proyecto-item">
         <h4><a href="{{ proyecto.url }}">{{ proyecto.title }}</a></h4>
       </li>

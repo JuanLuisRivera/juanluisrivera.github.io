@@ -1,5 +1,4 @@
 ---
-title: Relacionados con C#
-name: HackerRank
+title: C#
+name: C#
 ---
-Elementos relacionados con C#.

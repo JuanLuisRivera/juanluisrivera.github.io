@@ -6,6 +6,7 @@ description: >-
 url: "https://juanluisrivera.github.io/"
 author: Juan Luis Rivera Ibarra
 
+
 collections_dir: collections
 collections:
   posts:
@@ -20,6 +21,10 @@ collections:
     output: true
   ejercicios:
     output: true
+  lenguajes:
+    output: true
+  elementosTecnicos:
+    output: true
 
 permalink: pretty
 
@@ -30,18 +35,15 @@ pagination:
 
   collections:
     proyectos:
-      per_page: 2
-      permalink: /paginas/proyectos/:path/
+
       sort_field: 'date'
       sort_reverse: true
     ejercicios:
-      per_page: 2
-      permalink: /paginas/ejercicios/:path/
+
       sort_field: 'date'
       sort_reverse: true
     posts:
-      per_page: 2
-      permalink: /paginas/blog/:path/
+
       sort_field: 'date'
       sort_reverse: true
   trail: 
@@ -67,12 +69,27 @@ defaults:
       path: ""
       type: "ejercicios"
     values:
-      layout: "ejercicio"
+      layout: "entrada"
   - scope:
       path: ""
       type: "posts"
     values:
-      layout: "post"
+      layout: "entrada"
+  - scope:
+      path: ""
+      type: "proyectos"
+    values:
+      layout: "entrada"
+  - scope:
+      path: ""
+      type: "lenguajes"
+    values:
+      layout: "lenguaje"
+  - scope:
+      path: ""
+      type: "elementosTecnicos"
+    values:
+      layout: "elementoTecnico"
   - scope:
       path: ""
     values:
