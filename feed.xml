@@ -1,1 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://juanluisrivera.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://juanluisrivera.github.io//" rel="alternate" type="text/html" /><updated>2025-07-04T09:24:39+00:00</updated><id>https://juanluisrivera.github.io//feed.xml</id><title type="html">Juan Luis Rivera Personal Github Page</title><subtitle>Personal webpage with material, guides, exercises, projects, and diverse things I might be working on or have completed some time ago.</subtitle><author><name>Juan Luis Rivera Ibarra</name></author></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://juanluisrivera.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://juanluisrivera.github.io//" rel="alternate" type="text/html" /><updated>2025-07-05T18:20:06+00:00</updated><id>https://juanluisrivera.github.io//feed.xml</id><title type="html">Juan Luis Rivera Personal Github Page</title><subtitle>Personal webpage with material, guides, exercises, projects, and diverse things I might be working on or have completed some time ago.</subtitle><author><name>Juan Luis Rivera Ibarra</name></author><entry><title type="html">Introductory C Programming Specialization Parte 1</title><link href="https://juanluisrivera.github.io//2025/07/05/Introductory_C_Specialization/" rel="alternate" type="text/html" title="Introductory C Programming Specialization Parte 1" /><published>2025-07-05T00:00:00+00:00</published><updated>2025-07-05T00:00:00+00:00</updated><id>https://juanluisrivera.github.io//2025/07/05/Introductory_C_Specialization</id><content type="html" xml:base="https://juanluisrivera.github.io//2025/07/05/Introductory_C_Specialization/"><![CDATA[<p>Programming Fundamentals</p>
+
+<p>Module 1 / Course 1</p>
+
+<p>Introduction</p>
+
+<!--end_excerpt-->
+
+<h1 id="como-escribir-un-programa-con-el-metodo-de-los-7-pasos">Como escribir un programa con el metodo de los 7 pasos</h1>
+
+<h2 id="vista-previa-de-los-7-pasos-para-generar-algoritmos">Vista previa de los 7 pasos para generar algoritmos</h2>
+<p>Pasos 1 - 4</p>
+<ol>
+  <li>Trabajar en un caso particular</li>
+  <li>Escribir exactamente lo que se hizo</li>
+  <li>Generalizar del paso 2</li>
+  <li>Probar los pasos</li>
+  <li>Traducir a codigo</li>
+  <li>Probar el programa</li>
+  <li>Depurar el codigo</li>
+</ol>
+
+<h1 id="los-primeros-4-pasos">Los primeros 4 pasos</h1>
+<h2 id="trabajar-en-un-caso-particular">Trabajar en un caso particular</h2>
+<ul>
+  <li>Utilizar ejemplos particulares permite determinar si el proceso de solucion es adecuado</li>
+  <li>Problemas con este punto se pueden reducir a dos tipos de eventualidades
+    <ul>
+      <li>El problema esta mal definido</li>
+      <li>Falta de conocimiento</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="escribir-exactamente-lo-que-se-hizo">Escribir exactamente lo que se hizo</h2>
+<ul>
+  <li>Escribir todos los pasos de manera clara para que cualquier persona sin conocimiento previo pero con conocimiento de aritmetica basica pueda realizar</li>
+</ul>]]></content><author><name>Juan Luis Rivera Ibarra</name></author><summary type="html"><![CDATA[Programming Fundamentals Module 1 / Course 1 Introduction]]></summary></entry></feed>
