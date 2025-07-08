@@ -1,8 +1,7 @@
-# Necesary information for the SEO Tag jekyll plugin
-title: Juan Luis Rivera Personal Github Page
-tagline: A blog dedicated to share personal projects
+title: Juan Luis Rivera
+tagline: Blog dedicado a proyectos personales
 description: >-
-  Personal webpage with material, guides, exercises, projects, and diverse things I might be working on or have completed some time ago.
+  Un poco de todo
 url: "https://juanluisrivera.github.io/"
 author: Juan Luis Rivera Ibarra
 
@@ -28,36 +27,11 @@ collections:
 
 permalink: pretty
 
-pagination:
-
-  enabled: true
-  debug: false
-
-  collections:
-    proyectos:
-
-      sort_field: 'date'
-      sort_reverse: true
-    ejercicios:
-
-      sort_field: 'date'
-      sort_reverse: true
-    posts:
-
-      sort_field: 'date'
-      sort_reverse: true
-  trail: 
-    before: 2
-    after: 2
-
-
-
-
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-paginate-v2
+  - jekyll-spaceship
 
 defaults:
   - scope:

@@ -6,11 +6,9 @@ elementoTecnico: Ninguno
 URL: https://www.coursera.org/programs/mooc-unam-en-coursera-para-ti-uzeau/specializations/c-programming
 date: 2025-07-05
 ---
-Programming Fundamentals
+### Programming Fundamentals
 
-Module 1 / Course 1
-
-Introduction
+### Module 1 / Course 1
 
 <!--end_excerpt-->
 
@@ -25,13 +23,3 @@ Pasos 1 - 4
 5. Traducir a codigo
 6. Probar el programa
 7. Depurar el codigo
-
-# Los primeros 4 pasos
-## Trabajar en un caso particular
-- Utilizar ejemplos particulares permite determinar si el proceso de solucion es adecuado
-- Problemas con este punto se pueden reducir a dos tipos de eventualidades
-    - El problema esta mal definido
-    - Falta de conocimiento
-
-## Escribir exactamente lo que se hizo
-- Escribir todos los pasos de manera clara para que cualquier persona sin conocimiento previo pero con conocimiento de aritmetica basica pueda realizar

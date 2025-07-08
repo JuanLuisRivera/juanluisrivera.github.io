@@ -1,0 +1,27 @@
+table {
+  display: block;
+  margin: 1rem auto;
+  max-width: 100%;
+  overflow-x: auto;
+  width: max-content;
+  border-collapse: collapse;
+
+  th, td {
+    border: 1px solid #ccc;
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+    text-align: left;
+  }
+
+  scrollbar-width: thin;
+  scrollbar-color: #888 transparent;
+
+  &::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 3px;
+  }
+}
