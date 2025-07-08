@@ -1,24 +1,104 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://juanluisrivera.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://juanluisrivera.github.io//" rel="alternate" type="text/html" /><updated>2025-07-05T18:20:06+00:00</updated><id>https://juanluisrivera.github.io//feed.xml</id><title type="html">Juan Luis Rivera Personal Github Page</title><subtitle>Personal webpage with material, guides, exercises, projects, and diverse things I might be working on or have completed some time ago.</subtitle><author><name>Juan Luis Rivera Ibarra</name></author><entry><title type="html">Introductory C Programming Specialization Parte 1</title><link href="https://juanluisrivera.github.io//2025/07/05/Introductory_C_Specialization/" rel="alternate" type="text/html" title="Introductory C Programming Specialization Parte 1" /><published>2025-07-05T00:00:00+00:00</published><updated>2025-07-05T00:00:00+00:00</updated><id>https://juanluisrivera.github.io//2025/07/05/Introductory_C_Specialization</id><content type="html" xml:base="https://juanluisrivera.github.io//2025/07/05/Introductory_C_Specialization/"><![CDATA[<p>Programming Fundamentals</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="https://juanluisrivera.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://juanluisrivera.github.io//" rel="alternate" type="text/html" /><updated>2025-07-08T00:54:46+00:00</updated><id>https://juanluisrivera.github.io//feed.xml</id><title type="html">Juan Luis Rivera</title><subtitle>Un poco de todo</subtitle><author><name>Juan Luis Rivera Ibarra</name></author><entry><title type="html">Introductory C Programming Specialization Parte 3</title><link href="https://juanluisrivera.github.io//2025/07/07/Introductory_C_Specialization-3/" rel="alternate" type="text/html" title="Introductory C Programming Specialization Parte 3" /><published>2025-07-07T00:00:00+00:00</published><updated>2025-07-07T00:00:00+00:00</updated><id>https://juanluisrivera.github.io//2025/07/07/Introductory_C_Specialization%203</id><content type="html" xml:base="https://juanluisrivera.github.io//2025/07/07/Introductory_C_Specialization-3/"><![CDATA[<h3 id="programming-fundamentals">Programming Fundamentals</h3>
 
-<p>Module 1 / Course 1</p>
-
-<p>Introduction</p>
+<h3 id="module-1--course-1">Module 1 / Course 1</h3>
 
 <!--end_excerpt-->
 
-<h1 id="como-escribir-un-programa-con-el-metodo-de-los-7-pasos">Como escribir un programa con el metodo de los 7 pasos</h1>
+<h1 id="examples">Examples</h1>
+<h2 id="drawing-a-rectangle">Drawing a Rectangle</h2>
+<ul>
+  <li>Cuadricula de 16x16</li>
+  <li>Dibujar un rectangulo con determinadas dimensiones empezandod desde un punto especifico</li>
+</ul>
 
-<h2 id="vista-previa-de-los-7-pasos-para-generar-algoritmos">Vista previa de los 7 pasos para generar algoritmos</h2>
-<p>Pasos 1 - 4</p>
+<h3 id="resolucion">Resolucion</h3>
+<ul>
+  <li>Paso 1: Caso particular
+    <ul>
+      <li>x = 7</li>
+      <li>y = 9</li>
+      <li>Width = 8</li>
+      <li>Height = 4</li>
+    </ul>
+  </li>
+  <li>Paso 2: Desglosar con exactitud lo que se realizo
+    <ul>
+      <li>Posicionarse en la posicion apropiada de x</li>
+      <li>Posicionarse en la posicion apropiada de y</li>
+      <li>Dibujar una linea de longitud 8 en (7, 9)</li>
+      <li>Dibujar una linea de longitud 8 en (7, 10)</li>
+      <li>Dibujar una linea de longitud 8 en (7, 11)</li>
+      <li>Dibujar una linea de longitud 8 en (7, 12)</li>
+    </ul>
+  </li>
+  <li>Paso 3: Generalizar el procedimiento
+    <ul>
+      <li>Sea (x,y)
+        <ul>
+          <li>Para Max(x) = x + Width</li>
+          <li>Para Max(y) = y + Height</li>
+        </ul>
+      </li>
+      <li>Ubicarse en la posicion (x,y)
+        <ul>
+          <li>Para y &lt; Max(y)
+            <ul>
+              <li>Para x &lt; Max(x)
+                <ul>
+                  <li>Rellenar el cuadro de color azul</li>
+                  <li>x = x + 1</li>
+                </ul>
+              </li>
+              <li>y = y + 1</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="practica">Practica</h2>
 <ol>
-  <li>Trabajar en un caso particular</li>
-  <li>Escribir exactamente lo que se hizo</li>
-  <li>Generalizar del paso 2</li>
-  <li>Probar los pasos</li>
-  <li>Traducir a codigo</li>
-  <li>Probar el programa</li>
-  <li>Depurar el codigo</li>
+  <li>Una tabla es generada a traves de un algoritmo con parametro N no negativo, generando la siguiente tabla</li>
 </ol>
+
+<table>
+  <tbody>
+    <tr>
+      <td>N</td>
+      <td>Salida</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0 2</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>3 5 7 9</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>6 8 10 12 14 16</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>9 11 13 15 17 19 21 23</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>12 14 16 18 20 22 24 26 28 30</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>15 17 19 21 23 25 27 29 31 33 35 37</td>
+    </tr>
+  </tbody>
+</table>]]></content><author><name>Juan Luis Rivera Ibarra</name></author><summary type="html"><![CDATA[Programming Fundamentals Module 1 / Course 1]]></summary></entry><entry><title type="html">Introductory C Programming Specialization Parte 2</title><link href="https://juanluisrivera.github.io//2025/07/06/Introductory_C_Specialization-2/" rel="alternate" type="text/html" title="Introductory C Programming Specialization Parte 2" /><published>2025-07-06T00:00:00+00:00</published><updated>2025-07-06T00:00:00+00:00</updated><id>https://juanluisrivera.github.io//2025/07/06/Introductory_C_Specialization%202</id><content type="html" xml:base="https://juanluisrivera.github.io//2025/07/06/Introductory_C_Specialization-2/"><![CDATA[<h3 id="programming-fundamentals">Programming Fundamentals</h3>
+
+<h3 id="module-1--course-1">Module 1 / Course 1</h3>
+
+<!--end_excerpt-->
 
 <h1 id="los-primeros-4-pasos">Los primeros 4 pasos</h1>
 <h2 id="trabajar-en-un-caso-particular">Trabajar en un caso particular</h2>
@@ -35,4 +115,124 @@
 <h2 id="escribir-exactamente-lo-que-se-hizo">Escribir exactamente lo que se hizo</h2>
 <ul>
   <li>Escribir todos los pasos de manera clara para que cualquier persona sin conocimiento previo pero con conocimiento de aritmetica basica pueda realizar</li>
-</ul>]]></content><author><name>Juan Luis Rivera Ibarra</name></author><summary type="html"><![CDATA[Programming Fundamentals Module 1 / Course 1 Introduction]]></summary></entry></feed>
+</ul>
+
+<h2 id="generalizar-los-pasos-del-paso-2">Generalizar los pasos del paso 2</h2>
+<ul>
+  <li>Consiste en 2 pasos
+    <ol>
+      <li>De los casos particulares, se deberan remplazar los valores aritmeticos por expresiones algebraicas parametrizadas</li>
+      <li>Se debera determinar el numero exacto de repeticiones</li>
+    </ol>
+  </li>
+</ul>
+
+<h2 id="probar-el-algoritmo">Probar el algoritmo</h2>
+<ul>
+  <li>Se ejecuta el algoritmo de manera manual con diferentes valores especificos
+    <ul>
+      <li>En caso de presentar problemas se recomienda regresar al paso 1 y 2</li>
+    </ul>
+  </li>
+</ul>
+
+<h1 id="examples">Examples</h1>
+<h2 id="a-pattern-of-squares">A Pattern of Squares</h2>
+<ul>
+  <li>Algoritmo para llenar una cuadricula de una forma especifica
+    <ul>
+      <li>Paso 1
+        <ul>
+          <li>Realizar un caso particular
+            <ul>
+              <li>Rellenar la cuadricula tomando como base los ejemplos para N = 3</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Paso 2
+        <ul>
+          <li>Escribir exactamente lo que se realizo paso a paso
+            <ul>
+              <li>Rellenar el cuadrado en la coordenada (0,0) de color azul</li>
+              <li>Rellenar el cuadrado en la coordenada (0,1) de color rojo</li>
+              <li>Rellenar el cuadrado en la coordenada (0,2) de color rojo</li>
+              <li>Rellenar el cuadrado en la coordenada (0,3) de color azul</li>
+              <li>Rellenar el cuadrado en la coordenada (1,1) de color rojo</li>
+              <li>Rellenar el cuadrado en la coordenada (1,2) de color azul</li>
+              <li>Rellenar el cuadrado en la coordenada (1,3) de color rojo</li>
+              <li>Rellenar el cuadrado en la coordenada (2,2) de color rojo</li>
+              <li>Rellenar el cuadrado en la coordenada (2,3) de color rojo</li>
+              <li>Rellenar el cuadrado en la coordenada (3,3) de color azul</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Paso 3
+        <ul>
+          <li>Generalizar el procedimiento
+            <ul>
+              <li>Sea (x,y)
+                <ul>
+                  <li>Max(x) = 5 = N</li>
+                  <li>Max(y) = 5 = N</li>
+                  <li>Inicial(x) = 0</li>
+                  <li>Inicial (y) = 0
+                    <ul>
+                      <li>Se puede observar que al inicio de cada columna x = y</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>Siempre que x &lt;= N
+                <ul>
+                  <li>Siempre que y &lt;= N
+                    <ul>
+                      <li>(x + y) % 3 = 0
+                        <ul>
+                          <li>Rellenar cuadrado de color azul</li>
+                        </ul>
+                      </li>
+                      <li>De otra forma
+                        <ul>
+                          <li>Rellenar el cuadrado de color rojo</li>
+                        </ul>
+                      </li>
+                      <li>y = y + 1</li>
+                    </ul>
+                  </li>
+                  <li>x = x + 1</li>
+                  <li>y = x</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>Paso 4
+        <ul>
+          <li>Probar el algoritmo con un caso que no se haya utilizado previamente</li>
+          <li>Las pruebas no son demostraciones, no aseguran que el algoritmo sea correcto</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>]]></content><author><name>Juan Luis Rivera Ibarra</name></author><summary type="html"><![CDATA[Programming Fundamentals Module 1 / Course 1]]></summary></entry><entry><title type="html">Introductory C Programming Specialization Parte 1</title><link href="https://juanluisrivera.github.io//2025/07/05/Introductory_C_Specialization/" rel="alternate" type="text/html" title="Introductory C Programming Specialization Parte 1" /><published>2025-07-05T00:00:00+00:00</published><updated>2025-07-05T00:00:00+00:00</updated><id>https://juanluisrivera.github.io//2025/07/05/Introductory_C_Specialization</id><content type="html" xml:base="https://juanluisrivera.github.io//2025/07/05/Introductory_C_Specialization/"><![CDATA[<h3 id="programming-fundamentals">Programming Fundamentals</h3>
+
+<h3 id="module-1--course-1">Module 1 / Course 1</h3>
+
+<!--end_excerpt-->
+
+<h1 id="como-escribir-un-programa-con-el-metodo-de-los-7-pasos">Como escribir un programa con el metodo de los 7 pasos</h1>
+
+<h2 id="vista-previa-de-los-7-pasos-para-generar-algoritmos">Vista previa de los 7 pasos para generar algoritmos</h2>
+<p>Pasos 1 - 4</p>
+<ol>
+  <li>Trabajar en un caso particular</li>
+  <li>Escribir exactamente lo que se hizo</li>
+  <li>Generalizar del paso 2</li>
+  <li>Probar los pasos</li>
+  <li>Traducir a codigo</li>
+  <li>Probar el programa</li>
+  <li>Depurar el codigo</li>
+</ol>]]></content><author><name>Juan Luis Rivera Ibarra</name></author><summary type="html"><![CDATA[Programming Fundamentals Module 1 / Course 1]]></summary></entry></feed>

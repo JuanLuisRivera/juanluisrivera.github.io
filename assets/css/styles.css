@@ -36,3 +36,8 @@ footer { text-align: center; padding: 40px; }
 .pagination { text-align: center; }
 .pagination .page-numbers { margin-bottom: 10px; }
 .pagination .navigation-links { margin-top: 5px; }
+
+table { display: block; margin: 1rem auto; max-width: 100%; overflow-x: auto; width: max-content; border-collapse: collapse; scrollbar-width: thin; scrollbar-color: #888 transparent; }
+table th, table td { border: 1px solid #ccc; padding: 0.5rem 1rem; white-space: nowrap; text-align: left; }
+table::-webkit-scrollbar { height: 6px; }
+table::-webkit-scrollbar-thumb { background-color: #888; border-radius: 3px; }
