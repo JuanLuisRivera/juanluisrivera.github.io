@@ -2,6 +2,15 @@
 
 body { margin: 0; color: #262626; font-family: "Open Sans", sans-serif; font-size: 1.1em; line-height: 1.6; -webkit-font-smoothing: antialiased; }
 
+.contenido { max-width: 55vw; margin: 0 auto; padding: 2rem 1rem; text-align: left; line-height: 1.7; font-size: 1.1rem; color: #333; }
+.contenido img, .contenido iframe, .contenido table { display: block; margin: 1.5rem auto; max-width: 100%; height: auto; }
+.contenido h1, .contenido h2, .contenido h3, .contenido h4, .contenido h5, .contenido h6 { margin: 2rem 0 1rem; }
+.contenido ul, .contenido ol { padding-left: 1.5rem; margin: 1rem 0; }
+.contenido ul li, .contenido ol li { margin: 0.25rem 0; }
+.contenido ul li ul, .contenido ul li ol, .contenido ol li ul, .contenido ol li ol { padding-left: 1.5rem; }
+.contenido table { overflow-x: auto; width: max-content; }
+.contenido blockquote { margin: 1rem 0; padding-left: 1rem; border-left: 4px solid #ccc; color: #555; }
+
 h1, h2, h3 { font-weight: 600; color: #425469; font-family: "Muli", sans-serif; line-height: 1.5; }
 
 h1 { color: #19ccaa; font-size: 2.5em; }
@@ -32,10 +41,6 @@ aside nav:after { content: ''; display: table; clear: both; }
 footer { text-align: center; padding: 40px; }
 
 .current { color: green; }
-
-.pagination { text-align: center; }
-.pagination .page-numbers { margin-bottom: 10px; }
-.pagination .navigation-links { margin-top: 5px; }
 
 table { display: block; margin: 1rem auto; max-width: 100%; overflow-x: auto; width: max-content; border-collapse: collapse; scrollbar-width: thin; scrollbar-color: #888 transparent; }
 table th, table td { border: 1px solid #ccc; padding: 0.5rem 1rem; white-space: nowrap; text-align: left; }

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script defer src="/assets/js/fontawesome/brands.js"></script>
+    <script defer src="/assets/js/fontawesome/solid.js"></script>
+    <script defer src="/assets/js/fontawesome/fontawesome.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Introductory C Programming Specialization Parte 5 | Juan Luis Rivera</title>
+<meta name="generator" content="Jekyll v3.9.5">
+<meta property="og:title" content="Introductory C Programming Specialization Parte 5">
+<meta name="author" content="Juan Luis Rivera Ibarra">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Programming Fundamentals Module 1 / Course 1">
+<meta property="og:description" content="Programming Fundamentals Module 1 / Course 1">
+<link rel="canonical" href="https://juanluisrivera.github.io//cursos/c/2025-07-09-Duke_Introductory_C_Specialization_5/">
+<meta property="og:url" content="https://juanluisrivera.github.io//cursos/c/2025-07-09-Duke_Introductory_C_Specialization_5/">
+<meta property="og:site_name" content="Juan Luis Rivera">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2025-07-09T00:00:00+00:00">
+<meta name="twitter:card" content="summary">
+<meta property="twitter:title" content="Introductory C Programming Specialization Parte 5">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Juan Luis Rivera Ibarra"},"dateModified":"2025-07-09T00:00:00+00:00","datePublished":"2025-07-09T00:00:00+00:00","description":"Programming Fundamentals Module 1 / Course 1","headline":"Introductory C Programming Specialization Parte 5","mainEntityOfPage":{"@type":"WebPage","@id":"https://juanluisrivera.github.io//cursos/c/2025-07-09-Duke_Introductory_C_Specialization_5/"},"url":"https://juanluisrivera.github.io//cursos/c/2025-07-09-Duke_Introductory_C_Specialization_5/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <title>Introductory C Programming Specialization Parte 5</title>
+    <link rel="stylesheet" href="/assets/css/styles.css"> 
+    <link type="application/atom+xml" rel="alternate" href="https://juanluisrivera.github.io//feed.xml" title="Juan Luis Rivera">
+
+  <script src="/assets/js/pagination.js"></script>
+
+  
+  
+  
+  
+    <script src="/assets/js/cursos.js"></script>
+  
+  <script>MathJax={"tex":{"inlineMath":[["$","$"],["\\(","\\)"]],"displayMath":[["$$","$$"],["\\[","\\]"]]},"svg":{"fontCache":"global"}}</script><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+  <body>
+    <header>
+      <nav>
+    
+        <a href="/">Inicio</a>
+    
+        <a href="/indexes/about/">Acerca de mi</a>
+    
+        <a href="/indexes/blog/">Blog</a>
+    
+        <a href="/indexes/cursos/">Cursos</a>
+    
+        <a href="/indexes/ejercicios/">Ejercicios</a>
+    
+        <a href="/indexes/proyectos/">Proyectos</a>
+    
+</nav>
+    </header>
+
+    <main class="contenido">
+      <h1>Introductory C Programming Specialization Parte 5</h1>
+
+<h2>
+  Sitio: 
+  
+  
+    <a href="/sitios/duke/">Duke University</a>
+  
+</h2>
+
+<h2>
+  Lenguaje:
+  
+  
+    <a href="/lenguajes/c/">C</a>
+  
+</h2>
+
+<h2>
+  Elemento Tecnico:
+  
+  
+    Ninguno
+  
+</h2>
+
+<h2>
+  URL:
+  
+    <a href="https://www.coursera.org/programs/mooc-unam-en-coursera-para-ti-uzeau/specializations/c-programming"> Sitio Web</a>
+  
+</h2>
+
+<h2>
+  09 Jul 2025
+</h2>
+
+<h3 id="programming-fundamentals">Programming Fundamentals</h3>
+
+<h3 id="module-1--course-1">Module 1 / Course 1</h3>
+
+<!--end_excerpt-->
+
+<h1 id="ejercicios">Ejercicios</h1>
+<h2 id="generar-tabla-con-un-parametro">Generar tabla con un parametro</h2>
+<ul>
+  <li>Una tabla es generada a traves de un algoritmo con parametro N no negativo, generando la siguiente tabla</li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td>N</td>
+      <td>Salida</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0 2</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>3 5 7 9</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>6 8 10 12 14 16</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>9 11 13 15 17 19 21 23</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>12 14 16 18 20 22 24 26 28 30</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>15 17 19 21 23 25 27 29 31 33 35 37</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="pasos-para-obtener-el-algoritmo">Pasos para obtener el algoritmo</h2>
+<ul>
+  <li>Paso 1: Caso particular
+    <ul>
+      <li>N = 3</li>
+    </ul>
+  </li>
+  <li>Paso 2: Deglosar con exactitud lo que se realizo
+    <ul>
+      <li>Multiplicar N * 3 = 9</li>
+      <li>Al resultado anterior sumar 2 = 11</li>
+      <li>Al resultado anterior sumar 2 = 13</li>
+      <li>Al resultado anterior sumar 2 = 15</li>
+      <li>Al resultado anterior sumar 2 = 17</li>
+      <li>Al resultado anterior sumar 2 = 19</li>
+      <li>Al resultado anterior sumar 2 = 21</li>
+      <li>Al resultado anterior sumar 2 = 23</li>
+    </ul>
+  </li>
+  <li>Paso 3: Generalizar el procedimiento
+    <ul>
+      <li>Sea N la variable principal, se ocuparan como variables auxiliares
+        <ul>
+          <li>$x$</li>
+          <li>$y = 0$</li>
+        </ul>
+      </li>
+      <li>Para $y \leq 2N + 1$
+        <ul>
+          <li>Si $y = 0$
+            <ul>
+              <li>$x = N * 3$</li>
+            </ul>
+          </li>
+          <li>De otra forma
+            <ul>
+              <li>$x = x + 2$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>$y = y + 1$</li>
+    </ul>
+  </li>
+  <li>Paso 4: Probar el algoritmo con un caso no utilizado anteriormente
+    <ul>
+      <li>$N = 1$
+        <ul>
+          <li>$y = 0$</li>
+        </ul>
+      </li>
+      <li>$y \leq 2N + 1 \rightarrow 0 \leq 3$
+        <ul>
+          <li>$y = 0$
+            <ul>
+              <li>$x = N * 3 \rightarrow x = 3$</li>
+            </ul>
+          </li>
+          <li>$y = y + 1 \rightarrow y = 0 + 1$</li>
+        </ul>
+      </li>
+      <li>$y \leq 2N + 1 \rightarrow 1 \leq 3$
+        <ul>
+          <li>$y = 1$
+            <ul>
+              <li>$x = x + 2 \rightarrow x = 5$</li>
+            </ul>
+          </li>
+          <li>$y = y + 1 \rightarrow y = 2$</li>
+        </ul>
+      </li>
+      <li>$y \leq 2N + 1 \rightarrow 2 \leq 3$
+        <ul>
+          <li>$y = 2$
+            <ul>
+              <li>$x = x + 2 \rightarrow x = 7$</li>
+            </ul>
+          </li>
+          <li>$y = y + 1 \rightarrow y = 3$</li>
+        </ul>
+      </li>
+      <li>$y \leq 2N + 1 \rightarrow 3 \leq 3$
+        <ul>
+          <li>$y = 3$
+            <ul>
+              <li>$x = x + 2 \rightarrow x = 9$</li>
+            </ul>
+          </li>
+          <li>$y = y + 1 \rightarrow y = 4$</li>
+        </ul>
+      </li>
+      <li>$y \leq 2N + 1 \rightarrow 4 \leq 3$</li>
+    </ul>
+  </li>
+  <li>Por tanto, para N = 1</li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td>N</td>
+      <td>Salida</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>3 5 7 9</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="colorear-cuadros-de-una-cuadricula-con-un-parametro">Colorear cuadros de una cuadricula con un parametro</h2>
+<ul>
+  <li>
+    <p>Una cuadricula es coloreada a traves de un algoritmo con un parametro N no negativo, generando diversas cuadriculas
+<img src="/assets/images/ejercicio2_Introductory_C_4.png" alt="Cuadricula Ejercicio 2"></p>
+  </li>
+  <li>Paso 1: Caso particular
+    <ul>
+      <li>N = 1</li>
+    </ul>
+  </li>
+  <li>Paso 2: Desglosar con exactitud lo que se realizo
+    <ul>
+      <li>Ubicarse en la coordenada (0,0)</li>
+      <li>Colorear el cuadro (0,0) de color rojo</li>
+      <li>Colorear el cuadro (0,1) de color rojo</li>
+      <li>Ubicarse en la coordenada (1,1)</li>
+      <li>Colorear el cuadro (1,1) de color rojo</li>
+      <li>Colorear el cuadro (1,2) de color rojo</li>
+      <li>Ubicarse en la coordenada (3,1)</li>
+      <li>Colorear el cuadro (3,1) de color azul</li>
+      <li>Colorear el cuadro (3,3) de color azul</li>
+    </ul>
+  </li>
+  <li>Paso 3: Generalizar el procedimiento
+    <ul>
+      <li>Sea N la variable principal, se ocuparan como variables auxiliares
+        <ul>
+          <li>(x,y) = (0,0)</li>
+          <li>z = 0</li>
+        </ul>
+      </li>
+      <li>Para $z \leq N \rightarrow 0 &lt; leq 1$
+        <ul>
+          <li>Posicionarse en $(x,y)$</li>
+          <li>Colorear el cuadrado (x, y) de color rojo</li>
+          <li>Colorear el cuadrado (x, y + 1) de color rojo</li>
+          <li>(x,y) = (x + 1, y + 1)</li>
+        </ul>
+      </li>
+      <li>Si N % 2 = 0
+        <ul>
+          <li>Colorear el cuadrado (x, y) de color verde</li>
+        </ul>
+      </li>
+      <li>De otra manera
+        <ul>
+          <li>Colorear el cuadrado (x + 2, y + 1) de color azul</li>
+          <li>Colorear el cuadrado (x + 2, y - 1) de color azul</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Paso 4: Probar el algoritmo con un caso no utilizado anteriormente
+    <ul>
+      <li>N = 0</li>
+      <li>$z \leq 0 \rightarrow 0 \leq 0$
+        <ul>
+          <li>Posicionarse en $(0,0)$
+            <ul>
+              <li>Colorear el cuadrado (0,0) de color rojo</li>
+              <li>Colorear el cuadrado (0,1) de color rojo</li>
+              <li>$(x,y) = (x+1,y+1) \rightarrow (1,1)$</li>
+            </ul>
+          </li>
+          <li>$z % z % 2 = 0$
+            <ul>
+              <li>Colorear el cuadrado (1, 1) de color verde</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="obtener-una-serie-de-numeros-con-un-parametro">Obtener una serie de numeros con un parametro</h2>
+<ul>
+  <li>
+    <p>Se genera la siguiente tabla
+| N | Salida |
+| 0 | |
+| 1 | 0 1 |
+| 2 | 0 2 2 3 |
+| 3 | 0 2 4 3 4 5 |
+| 4 | 0 2 4 6 4 5 6 7 |
+| 5 | 0 2 4 6 8 5 6 7 8 9 |</p>
+  </li>
+  <li>Paso 1: Caso particular
+    <ul>
+      <li>N = 3</li>
+    </ul>
+  </li>
+  <li>Paso 2: Desglosar con exactitud lo que se realizo
+    <ul>
+      <li>Sea x la salida</li>
+      <li>$x = 0$</li>
+      <li>$x = x + 2 = 2$</li>
+      <li>$x = x + 2 = 4$</li>
+      <li>$x = N = 3$</li>
+      <li>$x = x + 1 = 4$</li>
+      <li>$x = x + 1 = 5$</li>
+    </ul>
+  </li>
+  <li>Paso 3: Generalizar el procedimiento
+    <ul>
+      <li>Sea N la variable principal se ocuparan como variables auxiliares
+        <ul>
+          <li>$x = 0$</li>
+          <li>$y = 0$</li>
+          <li>$z = 0$</li>
+        </ul>
+      </li>
+      <li>Para $y &lt; N &amp;&amp; z = 0$
+        <ul>
+          <li>Si $y = 0$
+            <ul>
+              <li>$x = 0$</li>
+            </ul>
+          </li>
+          <li>De otra manera
+            <ul>
+              <li>$x = x + 2$</li>
+            </ul>
+          </li>
+          <li>$y = y + 1$</li>
+        </ul>
+      </li>
+      <li>Para $y \leq N &amp;&amp; z &lt; N$
+        <ul>
+          <li>Si $z = 0$
+            <ul>
+              <li>$x = N$</li>
+              <li>$z = z + 1$</li>
+            </ul>
+          </li>
+          <li>De otra manera
+            <ul>
+              <li>$x = x + 1$</li>
+              <li>$z = z + 1$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Paso 4: Probar el algoritmo con un caso no utilizado anteriormente
+    <ul>
+      <li>N = 2
+        <ul>
+          <li>x = 0</li>
+          <li>y = 0</li>
+          <li>z = z</li>
+        </ul>
+      </li>
+      <li>$y &lt; N &amp;&amp; z = 0 \rightarrow 0 &lt; 2 &amp;&amp; 0 = 0$
+        <ul>
+          <li>$y = 0 \rightarrow 0 = 0$
+            <ul>
+              <li>$x = 0$</li>
+            </ul>
+          </li>
+          <li>$y = y + 1 \rightarrow y = 0 + 1 = \rightarrow y = 1$</li>
+        </ul>
+      </li>
+      <li>$y &lt; N &amp;&amp; z = 0 \rightarrow 1 &lt; 2 &amp;&amp; 0 = 0$
+        <ul>
+          <li>$y = 1$
+            <ul>
+              <li>$x = x + 2 \rightarrow x = 0 + 2 \rightarrow x = 2$</li>
+            </ul>
+          </li>
+          <li>$y = y + 1 \rightarrow y = 1 + 1 = \rightarrow y = 2$</li>
+        </ul>
+      </li>
+      <li>$y \leq N &amp;&amp; z &lt; N \rightarrow 2 \leq 2 &amp;&amp; 0 &lt; 2$
+        <ul>
+          <li>$z = 0 \rightarrow 0 = 0$
+            <ul>
+              <li>$x = N \rightarrow x = 2$</li>
+              <li>$z = z + 1 \rightarrow z = 0 + 1 \rightarrow z = 1$</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>$y \leq N &amp;&amp; z &lt; N \rightarrow 2 \leq 2 &amp;&amp; 1 &lt; 2$
+        <ul>
+          <li>$x = x + 1 \rightarrow x = 2 + 1 \rightarrow x = 3$</li>
+          <li>$z = z + 1 \rightarrow z = 1 + 1 \rigtharrow z = 2$</li>
+        </ul>
+      </li>
+      <li>$y \leq N &amp;&amp; z &lt; N \rightarrow 2 \leq 2 &amp;&amp; 2 &lt; 2$</li>
+    </ul>
+  </li>
+  <li>Por tanto, para N = 2</li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td>N</td>
+      <td>Salida</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>0 2 2 3</td>
+    </tr>
+  </tbody>
+</table>
+
+    </main>
+    
+    <footer>
+      <nav>
+    
+        <a href="https://github.com/JuanLuisRivera"> <i class="fa-brands fa-github-square"></i> Github</a>
+    
+        <a href="https://www.linkedin.com/in/juan-luis-rivera-ibarra/"> <i class="fa-brands fa-linkedin"></i> Linkedin</a>
+    
+</nav>
+    </footer>
+  </body>
+</html>
