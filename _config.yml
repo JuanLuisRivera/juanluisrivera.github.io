@@ -24,6 +24,10 @@ collections:
     output: true
   elementosTecnicos:
     output: true
+  cursos:
+    output: true
+  indexes:
+    output: true
 
 permalink: pretty
 
@@ -34,6 +38,11 @@ plugins:
   - jekyll-spaceship
 
 defaults:
+  - scope:
+      path: ""
+      type: "indexes"
+    values:
+      layout: "index"
   - scope:
       path: ""
       type: "sitios"
@@ -64,6 +73,11 @@ defaults:
       type: "elementosTecnicos"
     values:
       layout: "elementoTecnico"
+  - scope:
+      path: ""
+      type: "cursos"
+    values:
+      layout: "entrada"
   - scope:
       path: ""
     values:

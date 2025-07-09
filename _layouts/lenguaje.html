@@ -3,10 +3,6 @@ layout: templates/default
 ---
 <h1>
   {{ page.title }}
-  {% assign sitio = site.lenguajes | where: 'nombre', page.lenguaje | first %}
-  {% if lenguaje %}
-    <a href="{{ lenguaje.url }}">{{ lenguaje.title }}</a>
-  {% endif %}
 </h1>
 
 {{ content }}
@@ -36,6 +32,19 @@ layout: templates/default
   {% endfor %}
 </ul>
 <div class="pagination" id="posts-pagination"></div>
+
+
+<h3>Cursos:</h3>
+<ul id="cursos-list">
+  {% for curso in site.cursos %}
+    {% if page.name == curso.lenguaje %}
+      <li class="curso-item">
+        <h4><a href="{{ curso.url }}">{{ curso.title }}</a></h4>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+<div class="pagination" id="cursos-pagination"></div>
 
 
 <h3>Proyectos:</h3>

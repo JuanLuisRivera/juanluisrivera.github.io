@@ -26,8 +26,20 @@ function paginateList(listId, itemClass, paginationId, itemsPerPage = 3) {
   showPage(currentPage);
 }
 
+
+
 document.addEventListener("DOMContentLoaded", () => {
   paginateList("ejercicios-list", "ejercicio-item", "ejercicios-pagination", 3);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
   paginateList("posts-list", "post-item", "posts-pagination", 3);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
   paginateList("proyectos-list", "proyecto-item", "proyectos-pagination", 3);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  paginateList("cursos-list", "curso-item", "cursos-pagination", 3);
 });

@@ -12,7 +12,20 @@
     <link rel="stylesheet" href="/assets/css/styles.css"> 
     {% feed_meta %}
 
-    <script src="{{ '../assets/js/pagination.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/pagination.js' | relative_url }}"></script>
+
+  {% if page.collection == "ejercicios" or page.name == "Ejercicios" %}
+    <script src="{{ '/assets/js/ejercicios.js' | relative_url }}"></script>
+  {% endif %}
+  {% if page.collection == "posts" or page.name == "Blog" %}
+    <script src="{{ '/assets/js/posts.js' | relative_url }}"></script>
+  {% endif %}
+  {% if page.collection == "proyectos" or page.name == "Proyectos" %}
+    <script src="{{ '/assets/js/proyectos.js' | relative_url }}"></script>
+  {% endif %}
+  {% if page.collection == "cursos" or page.name == "Cursos" %}
+    <script src="{{ '/assets/js/cursos.js' | relative_url }}"></script>
+  {% endif %}
   </head>
 
   <body>
@@ -20,9 +33,9 @@
       {% include navigation.html %}
     </header>
 
-    <section class="content">
+    <main class="contenido">
       {{ content }}
-    </section>
+    </main>
     
     <footer>
       {% include social.html %}

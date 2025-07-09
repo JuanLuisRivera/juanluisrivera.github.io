@@ -3,10 +3,6 @@ layout: templates/default
 ---
 <h1>
   {{ page.title }}
-  {% assign sitio = site.sitios | where: 'nombre', page.sitio | first %}
-  {% if ejercicio %}
-    <a href="{{ sitio.url }}">{{ sitio.title }}</a>
-  {% endif %}
 </h1>
 
 {{ content }}
@@ -14,38 +10,58 @@ layout: templates/default
 
 <h2>Publicaciones relacionadas:</h2>
 <h3>Ejercicios:</h3>
+<button class="orden-toggle-ejercicios">Orden: Ascendente</button>
 <ul id="ejercicios-list">
   {% for ejercicio in site.ejercicios %}
     {% if page.name == ejercicio.sitio %}
-      <li class="ejercicio-item">
-        <h4><a href="{{ ejercicio.url }}">{{ ejercicio.title }}</a></h4>
-      </li>
+    <li class="ejercicio-item" data-fecha="{{ ejercicio.date | date: '%Y-%m-%d' }}">
+      <a href="{{ ejercicio.url }}">{{ ejercicio.title }}</a>
+    </li>
     {% endif %}
   {% endfor %}
 </ul>
-<div class="pagination" id="ejercicios-pagination"></div>
+<div id="ejercicios-pagination"></div>
+
 
 
 <h3>Posts:</h3>
+<button class="orden-toggle-posts">Orden: Ascendente</button>
 <ul id="posts-list">
   {% for post in site.posts %}
     {% if page.name == post.sitio %}
-      <li class="post-item">
-        <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-      </li>
+    <li class="post-item" data-fecha="{{ post.date | date: '%Y-%m-%d' }}">
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
     {% endif %}
   {% endfor %}
 </ul>
 <div class="pagination" id="posts-pagination"></div>
 
 
+
+<h3>Cursos:</h3>
+<button class="orden-toggle-cursos">Orden: Ascendente</button>
+<ul id="cursos-list">
+  {% for curso in site.cursos %}
+    {% if page.name == curso.sitio %}
+    <li class="curso-item" data-fecha="{{ curso.date | date: '%Y-%m-%d' }}">
+      <a href="{{ curso.url }}">{{ curso.title }}</a>
+    </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+<div class="pagination" id="cursos-pagination"></div>
+
+
+
 <h3>Proyectos:</h3>
+<button class="orden-toggle-proyectos">Orden: Ascendente</button>
 <ul id="proyectos-list">
   {% for proyecto in site.proyectos %}
     {% if page.name == proyecto.sitio %}
-      <li class="proyecto-item">
-        <h4><a href="{{ proyecto.url }}">{{ proyecto.title }}</a></h4>
-      </li>
+    <li class="proyecto-item" data-fecha="{{ proyecto.date | date: '%Y-%m-%d' }}">
+      <a href="{{ proyecto.url }}">{{ proyecto.title }}</a>
+    </li>
     {% endif %}
   {% endfor %}
 </ul>

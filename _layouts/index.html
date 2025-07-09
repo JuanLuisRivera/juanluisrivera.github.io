@@ -1,0 +1,65 @@
+---
+layout: templates/default
+---
+
+{{ content }}
+
+{% if page.name == "About" %}
+    <h1>Contenido variado:</h1>
+{% endif %}
+
+
+{% if page.name == "Blog" %}
+    <h1>Todas las entradas:</h1>
+    <button class="orden-toggle-posts">Ordenar por fecha</button>
+    <ul id="posts-list">
+        {% for post in site.posts %}
+            <li class="post-item" data-fecha="{{ post.date | date: '%Y-%m-%d' }}">
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <div class="pagination" id="posts-pagination"></div>
+{% endif %}
+
+
+{% if page.name == "Cursos" %}
+    <h1>Todos los cursos:</h1>
+    <button class="orden-toggle-cursos">Ordenar por fecha</button>
+    <ul id="cursos-list">
+        {% for curso in site.cursos %}
+            <li class="curso-item" data-fecha="{{ curso.date | date: '%Y-%m-%d' }}">
+                <a href="{{ curso.url }}">{{ curso.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <div class="pagination" id="cursos-pagination"></div>
+{% endif %}
+
+
+{% if page.name == "Ejercicios" %}
+    <h1>Todos los ejercicios:</h1>
+    <button class="orden-toggle-ejercicios">Ordenar por fecha</button>
+    <ul id="ejercicios-list">
+        {% for ejercicio in site.ejercicios %}
+            <li class="ejercicio-item" data-fecha="{{ ejercicio.date | date: '%Y-%m-%d' }}">
+                <a href="{{ ejercicio.url }}">{{ ejercicio.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <div class="pagination" id="ejercicios-pagination"></div>
+{% endif %}
+
+
+{% if page.name == "Proyectos" %}
+    <h1>Todos los proyectos:</h1>
+    <button class="orden-toggle-proyectos">Ordenar por fecha</button>
+    <ul id="proyectos-list">
+        {% for proyecto in site.proyectos %}
+            <li class="proyecto-item" data-fecha="{{ proyecto.date | date: '%Y-%m-%d' }}">
+                <a href="{{ proyecto.url }}">{{ proyecto.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+    <div class="pagination" id="proyectos-pagination"></div>
+{% endif %}

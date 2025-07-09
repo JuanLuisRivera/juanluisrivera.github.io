@@ -6,6 +6,53 @@ body {
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
   }
+
+.contenido {
+  max-width: 55vw;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: left;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  color: #333;
+
+  img, iframe, table {
+    display: block;
+    margin: 1.5rem auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 2rem 0 1rem;
+  }
+
+  ul, ol {
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+
+    li {
+      margin: 0.25rem 0;
+
+      ul, ol {
+        padding-left: 1.5rem;
+      }
+    }
+  }
+
+  table {
+    overflow-x: auto;
+    width: max-content;
+  }
+
+  blockquote {
+    margin: 1rem 0;
+    padding-left: 1rem;
+    border-left: 4px solid #ccc;
+    color: #555;
+  }
+}
+
   h1,
   h2,
   h3 {

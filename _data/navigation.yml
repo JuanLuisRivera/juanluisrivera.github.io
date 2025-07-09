@@ -3,16 +3,19 @@
   link: /
   
 - name: Acerca de mi
-  link: /paginas/about/
+  link: /indexes/about/
 
 - name: Blog
-  link: /paginas/blog/
+  link: /indexes/blog/
 
-- name: Proyectos
-  link: /paginas/proyectos/
+- name: Cursos
+  link: /indexes/cursos/
 
 - name: Ejercicios
-  link: /paginas/ejercicios/
+  link: /indexes/ejercicios/
+
+- name: Proyectos
+  link: /indexes/proyectos/
 
 #- name: Temas
 #  link: /paginas/tags/
