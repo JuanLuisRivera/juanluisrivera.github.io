@@ -124,6 +124,7 @@ date: 2025-07-08
 
 ## Obtener una serie de numeros con un parametro
 - Se genera la siguiente tabla
+
 | N | Salida |
 | 0 | |
 | 1 | 0 1 |
@@ -149,14 +150,14 @@ date: 2025-07-08
         - $x = 0$
         - $y = 0$
         - $z = 0$
-    - Para $y < N && z = 0$
+    - Para $y < N \space \And \space z = 0$ 
         - Si $y = 0$
             - $x = 0$
         - De otra manera
             - $x = x + 2$
         - $y = y + 1$
 
-    - Para $y \leq N && z < N$
+    - Para $y \leq N \space \And \space z < N$
         - Si $z = 0$
             - $x = N$
             - $z = z + 1$
@@ -170,26 +171,26 @@ date: 2025-07-08
         - y = 0
         - z = z
 
-    - $y < N && z = 0 \rightarrow 0 < 2 && 0 = 0$
+    - $y < N \space \And \space z = 0 \rightarrow 0 < 2 \space \And \space 0 = 0$
         - $y = 0 \rightarrow 0 = 0$
             - $x = 0$
         - $y = y + 1 \rightarrow y = 0 + 1 = \rightarrow y = 1$
 
-    - $y < N && z = 0 \rightarrow 1 < 2 && 0 = 0$
+    - $y < N \space \And \space z = 0 \rightarrow 1 < 2 \space \And \space 0 = 0$
         - $y = 1$
             - $x = x + 2 \rightarrow x = 0 + 2 \rightarrow x = 2$
         - $y = y + 1 \rightarrow y = 1 + 1 = \rightarrow y = 2$
 
-    - $y \leq N && z < N \rightarrow 2 \leq 2 && 0 < 2$
+    - $y \leq N \space \And \space z < N \rightarrow 2 \leq 2 \space \And \space 0 < 2$
         - $z = 0 \rightarrow 0 = 0$
             - $x = N \rightarrow x = 2$
             - $z = z + 1 \rightarrow z = 0 + 1 \rightarrow z = 1$
 
-    - $y \leq N && z < N \rightarrow 2 \leq 2 && 1 < 2$
+    - $y \leq N \space \And \space z < N \rightarrow 2 \leq 2 \space \And \space 1 < 2$
         - $x = x + 1 \rightarrow x = 2 + 1 \rightarrow x = 3$
-        - $z = z + 1 \rightarrow z = 1 + 1 \rigtharrow z = 2$
+        - $z = z + 1 \rightarrow z = 1 + 1 \rightarrow z = 2$
     
-    - $y \leq N && z < N \rightarrow 2 \leq 2 && 2 < 2$
+    - $y \leq N \space \And \space z < N \rightarrow 2 \leq 2 \space \And \space 2 < 2$
 
 - Por tanto, para N = 2
 
