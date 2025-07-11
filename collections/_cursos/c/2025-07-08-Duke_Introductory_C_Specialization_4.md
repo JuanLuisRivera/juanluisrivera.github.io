@@ -101,16 +101,17 @@ date: 2025-07-08
     - Sea N la variable principal, se ocuparan como variables auxiliares
         - (x,y) = (0,0)
         - z = 0
-    - Para $z \leq N \rightarrow 0 < leq 1$
+    - Para $z \leq N$
         - Posicionarse en $(x,y)$
         - Colorear el cuadrado (x, y) de color rojo
         - Colorear el cuadrado (x, y + 1) de color rojo
+        - $z = z + 1$
         - (x,y) = (x + 1, y + 1)
-    - Si N % 2 = 0
-        - Colorear el cuadrado (x, y) de color verde
-    - De otra manera
+    - Si $z \space \% \space 2 = 0$
         - Colorear el cuadrado (x + 2, y + 1) de color azul
         - Colorear el cuadrado (x + 2, y - 1) de color azul
+    - De otra manera
+        - Colorear el cuadrado (x, y) de color verde
 
 - Paso 4: Probar el algoritmo con un caso no utilizado anteriormente
     - N = 0
@@ -119,7 +120,8 @@ date: 2025-07-08
             - Colorear el cuadrado (0,0) de color rojo
             - Colorear el cuadrado (0,1) de color rojo
             - $(x,y) = (x+1,y+1) \rightarrow (1,1)$
-        - $z % z % 2 = 0$
+            - $z = z + 1 \rightarrow z = 0 + 1 \rightarrow z = 1$
+        - $z \space \% \space 2 \neq 0$
             - Colorear el cuadrado (1, 1) de color verde
 
 ## Obtener una serie de numeros con un parametro
