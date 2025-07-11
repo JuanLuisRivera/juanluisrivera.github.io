@@ -286,23 +286,24 @@
           <li>z = 0</li>
         </ul>
       </li>
-      <li>Para $z \leq N \rightarrow 0 &lt; leq 1$
+      <li>Para $z \leq N$
         <ul>
           <li>Posicionarse en $(x,y)$</li>
           <li>Colorear el cuadrado (x, y) de color rojo</li>
           <li>Colorear el cuadrado (x, y + 1) de color rojo</li>
+          <li>$z = z + 1$</li>
           <li>(x,y) = (x + 1, y + 1)</li>
         </ul>
       </li>
-      <li>Si N % 2 = 0
+      <li>Si $z \space \% \space 2 = 0$
         <ul>
-          <li>Colorear el cuadrado (x, y) de color verde</li>
+          <li>Colorear el cuadrado (x + 2, y + 1) de color azul</li>
+          <li>Colorear el cuadrado (x + 2, y - 1) de color azul</li>
         </ul>
       </li>
       <li>De otra manera
         <ul>
-          <li>Colorear el cuadrado (x + 2, y + 1) de color azul</li>
-          <li>Colorear el cuadrado (x + 2, y - 1) de color azul</li>
+          <li>Colorear el cuadrado (x, y) de color verde</li>
         </ul>
       </li>
     </ul>
@@ -317,9 +318,10 @@
               <li>Colorear el cuadrado (0,0) de color rojo</li>
               <li>Colorear el cuadrado (0,1) de color rojo</li>
               <li>$(x,y) = (x+1,y+1) \rightarrow (1,1)$</li>
+              <li>$z = z + 1 \rightarrow z = 0 + 1 \rightarrow z = 1$</li>
             </ul>
           </li>
-          <li>$z % z % 2 = 0$
+          <li>$z \space \% \space 2 \neq 0$
             <ul>
               <li>Colorear el cuadrado (1, 1) de color verde</li>
             </ul>
